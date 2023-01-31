@@ -6,16 +6,42 @@
     </head>
     <body>
         <!--Hello this is an HTML comment-->
+        <!-- 
+            SOME THINGS TO KNOW:
+
+            Shift will indent. Shift + Tab will indent backwards
+            CMD + left/right arrows to move cursor to start and end of the line.
+
+            CMD + up/down arrows move to start or end of page
+            Shift + CMD + left/right arrows select to the start/end of the line.
+
+            Shift + up/down arrows will select per line
+        -->
         <!--Site Header-->
         <header>
             <!--h1 is the most important heading. We can use 6 levels of headings from hi to h6-->
             <h1><strong>REGGIE'S PIZZA CORNER</strong></h1>
+            <!-- Navigation Bar on top -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+
         </header>
         <!--Starting the main content of the page-->
         <main>
             <!--Article of the page. This can be used as a stand-alone-->
             <article>
                 <h2>Our Story</h2>
+                <!-- Jumpng link within page -->
+                <a href="#treatofweek">Treat of the Week</a>
+                <!-- Adding an image -->
+                <!-- Can also use "./" to link from root folder-->
+                <img src="./images/pizza-pexels.jpg" alt="Farmhouse Pizza" title="Reggie's Famous Farmhouse Pizza" width="750">
                 <p>
                     <em>We are a family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head chef of the shop. Maria is the barista and pastry chef.
                 </p>
@@ -47,7 +73,7 @@
                 </ol>
             </section>
             <!-- Adding a section for description list -->
-            <section>
+            <section id="treatofweek">
                 <h3>Treat of the Week</h3>
                 <dl>
                     <dt>Name</dt>
@@ -69,6 +95,8 @@
                         </ul>
                     </dd>
                 </dl>
+                <!-- Adding an external link -->
+                <a href="https://natashaskitchen.com/banana-bread-recipe-video/" target="_blank">Get the recipe here!</a>
             </section>
         </main>
         <hr>
