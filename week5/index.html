@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Reggie's Pizza Corner - HOME</title>
+        <link rel="stylesheet" href="/week5/css/main.css">
     </head>
     <body>
         <!--Hello this is an HTML comment-->
@@ -33,18 +34,21 @@
         </header>
         <!--Starting the main content of the page-->
         <main>
+            <!-- Jumpng link within page -->
+            <a href="#treatofweek" class="blue-link large-text">Treat of the Week</a>
             <!--Article of the page. This can be used as a stand-alone-->
             <article>
                 <h2>Our Story</h2>
-                <!-- Jumpng link within page -->
-                <a href="#treatofweek">Treat of the Week</a>
+                
                 <!-- Adding an image -->
                 <!-- Can also use "./" to link from root folder-->
                 <img src="./images/pizza-pexels.jpg" alt="Farmhouse Pizza" title="Reggie's Famous Farmhouse Pizza" width="850">
                 <p>
                     <em>We are a family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head chef of the shop. Maria is the barista and pastry chef.
                 </p>
-                <blockquote>We love all things Pizza! <cite> - Reggie & Maria</cite></blockquote>
+                <blockquote class="large-text">
+                    We love all things Pizza! <cite> - Reggie & Maria</cite>
+                </blockquote>
                 <hr>
                 <section>
                     <h3>Ottawa</h3>
@@ -72,7 +76,7 @@
                 </ol>
             </section>
             <!-- Adding a section for description list -->
-            <section id="treatofweek">
+            <section id="treatofweek" class="white-text">
                 <h3>Treat of the Week</h3>
                 <dl>
                     <dt>Name</dt>
@@ -94,9 +98,9 @@
                         </ul>
                     </dd>
                 </dl>
-                <!-- Adding an external link -->
-                <a href="https://natashaskitchen.com/banana-bread-recipe-video/" target="_blank">Get the recipe here!</a>
             </section>
+            <!-- Adding an external link -->
+            <a href="https://natashaskitchen.com/banana-bread-recipe-video/" target="_blank" class="blue-link large-text">Get the recipe here!</a>
             <!-- Adding section for Menu Table -->
             <section>
                 <h3>Menu Specials</h3>
@@ -128,7 +132,7 @@
         </main>
         <hr>
         <!-- Site Footer -->
-        <footer>
+        <footer class="site-footer">
             &copy; Copyright Reggie's Pizza Corner, 2023
         </footer>
     </body>
