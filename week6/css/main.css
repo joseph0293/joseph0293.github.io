@@ -3,14 +3,16 @@
 */
 body
 {
+    background-size: contain;
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(71, 71, 71);
 }
+
 h1
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
 }
 
 p
@@ -61,10 +63,17 @@ nav ul a
     Combinators
     direct child selector - will only select child of the parent
  */
+ /* CSS typography properties */
 
  article>p 
  {
     font-size: 24px;
+    color: white;
+    background-color: #f36b24;
+    font-weight:bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
  }
 
  /* Adjacent sibling selector - selects the element that is the very next sibling to the selected element */
