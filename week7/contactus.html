@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reggie's Pizza Corner - CONTACT US</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--Hello this is an HTML comment-->
+        <!-- 
+            SOME THINGS TO KNOW:
+
+            Shift will indent. Shift + Tab will indent backwards
+            CMD + left/right arrows to move cursor to start and end of the line.
+
+            CMD + up/down arrows move to start or end of page
+            Shift + CMD + left/right arrows select to the start/end of the line.
+
+            Shift + up/down arrows will select per line
+        -->
+        <!--Site Header-->
+        <header>
+            <!--h1 is the most important heading. We can use 6 levels of headings from hi to h6-->
+            <h1><strong>REGGIE'S PIZZA CORNER</strong></h1>
+            <!-- Navigation Bar on top -->
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+
+        </header>
+        <!--Starting the main content of the page-->
+        <main>
+            <h2>Contact Us</h2>
+            <!-- Adding table for hours of operation -->
+            <table>
+                <caption>Hours Of Operation</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Mon - Fri</td>
+                        <td>6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>8AM - 11PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Adding section for contact form -->
+            <section>
+                <h3>We would love to hear from you!</h3>
+                <!-- Adding a form -->
+                <form action="thanks.html" method="get">
+                    <div>
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="emailid">Email</label>
+                        <input type="email" id="emailid" name="emailid" placeholder="Algonquin Username" value="@algonquinlive.com" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="40" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <label for="tickets">How many tickets? (Sold in pairs)</label>
+                        <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+                    </div>
+                    <div>
+                        <label for="row">Row</label>
+                        <select name="row" id="row">
+                            <option value="front">Front</option>
+                            <option value="centrerow" selected>Centre Row</option>
+                            <option value="backrow">Back Row</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Have you been here before?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="yesorno" checked>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="yesorno">
+                    </div>
+                    <div>
+                        <h3>Policies</h3>
+                        <input type="checkbox" name="policies" id="policies" required>
+                        <label for="policies">I agree to the terms & conditions.</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <hr>
+        <!-- Site Footer -->
+        <footer>
+            &copy; Copyright Reggie's Pizza Corner, 2023
+        </footer>
+    </body>
+</html>
