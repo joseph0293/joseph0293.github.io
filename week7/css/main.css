@@ -3,10 +3,24 @@
 */
 
 body {
+    padding-top: 92px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(71, 71, 71);
     /* Adding background image */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006664;
     background-image: url(../images/white_brick_wall.png);
+}
+
+/* box model example */
+section p {
+    width: 50%;
+    padding: 1em 0.5;
+    /* single value - top/ bottom/ L/R */
+    /* 2 values - 1st is top, bottom, 2nd is left right */
+    margin: 1em, 2em, 2. em 2em;
+    /* ^this is: top, right, bottom, left */
+    border-bottom: 2px solid black;
 }
 
 .treatstyle {
@@ -43,13 +57,33 @@ nav ul {
     list-style: circle;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
 /* Selecting child elements with multiple levels */
 nav ul a {
+    text-align: center;
+    display: block;
     color: rgb(255, 255, 255);
     background-color: black;
     font-weight: 600;
     font-size: 1.5rem;
     /* 1.5rem = 1.5 x 16px = 24px */
+}
+
+.container {
+    /* container containing everything inside body tag */
+    max-width: 1200px;
+    /* top bottom left right */
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
 }
 
 /* Selecting element with id value */
@@ -69,15 +103,55 @@ nav ul a {
 
     /* height: 100vh */
     /* height is 100% of the browser size and it is dynamic */
+    position: relative;
 }
+
+
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    z-index: 999;
+}
+
 .blue-link {
+    padding: 0.5em;
     background-color: dark rgb(255, 255, 255);
     color: white;
     text-decoration: none;
 }
- 
+
+
 .large-text {
     font-size: 20px;
+}
+
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+
+}
+
+section {
+    clear: both;
 }
 
 .white-text {
@@ -114,10 +188,6 @@ h3~p {
 [href+"#treatofweek"] {
     font-weight: bold;
     font-size: 24px;
-}
-
-[src="./images/pizza-pexels2.jpg"] {
-    border: 20px solid #00b2ac
 }
 
 /* All images that end in .jpg gets border: */
