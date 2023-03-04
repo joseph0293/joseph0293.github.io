@@ -1,0 +1,293 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------
+This is where the CSS designing will start. This is just a break between RESET CSS and actual CSS 
+----------------------------------------------------------------------------------------------------*/
+
+body {
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+    color:  rgb(105, 131, 169);
+    background-color: rgb(31, 32, 52);
+}
+
+.container {
+    background-color: rgb(18, 17, 37);
+    margin: 0 auto;
+    max-height: fit-content;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-image: url(/midterm/images/header-bg-wikipedia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2% 20%;
+    padding: 10%;
+    color: #ffffff;
+
+}
+
+h2 {
+    font-size: 25px;
+    color: rgb(149, 187, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+figure {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: small;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+    padding-bottom: 1%;
+}
+
+p:nth-child(6) {
+    padding-bottom: 5%;
+}
+
+p:nth-child(3) {
+    text-indent: 5%;
+}
+
+h3 {
+    color: rgb(149, 187, 243);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: 0.5%;
+    text-transform: uppercase;
+}
+
+article ul li {
+    list-style: circle;
+    line-height: 1.5;
+    padding-left: 1%;
+    padding-right: 20%;
+    font-size: 16px;
+}
+
+h4 {
+    color: rgb(149, 187, 243);
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.inputform {
+    border: dotted 1px rgb(149, 187, 243);
+    padding: 1%;
+}
+
+form div label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form div input {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+form div button {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(18, 17, 37);
+    background-color: rgb(149, 187, 243);
+    text-transform: uppercase;
+}
+div h5 {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(149, 187, 243);
+}
+
+input {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+textarea {
+    background-color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav ul a {
+    width: 100%;
+    color: rgb(232, 81, 81);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    display: inline-block;
+    width: 92%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
