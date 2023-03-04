@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title></title>
+    <title>The Mantis Shrimp - Canadian Museum of Nature</title>
 </head>
 
 <body>
     <header>
         <h1>
-            <strong>The Mantis Shrimp</strong>
+            <strong>The Peacock Mantis Shrimp</strong>
         </h1>
         <nav class="container blue-link">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="https://nature.ca/en/">Home</a></li>
                 <li><a href="story.html">Story</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contactusform">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
         <article>
-            <h2>The Beautiful Yet Deadly Mantis Shrimp</h2>
+            <h2>This Beauty Packs a Punch!</h2>
             <figure>
                 <img id="imageshrimp" src="/midterm/images/mantis-shrimp-burrow.png" alt="Peacock Mantis Shrimp" width="500">
                 <figcaption>Photograph by fenkieandreas, Getty Images</figcaption>
@@ -69,22 +69,22 @@
         </article>
         <aside>
             <h4>Contact the Canadian Museum of Nature to learn more!</h4>
-            <section class="inputform">
+            <section class="inputform" id="contactusform">
                 <form action="getback.html" method="get">
                     <div>
-                        <label id="nameofperson" for="fullname">Your Name:</label>
+                        <label for="fullname">Your Name:</label>
                         <br>
-                        <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+                        <input class="allforminputs" type="text" id="fullname" name="fullname" placeholder="John Doe">
                     </div>
                     <div>
                         <label for="emailid">Your College Email:</label>
                         <br>
-                        <input type="email" id="emailid" name="emailid" placeholder="College Email" required>
+                        <input class="allforminputs" type="email" id="emailid" name="emailid" placeholder="College Email" required>
                     </div>
                     <div>
                         <label for="message">Your Message:</label>
-                        <br><br>
-                        <textarea name="message" id="message" cols="40" rows="5"></textarea>
+                        <br>
+                        <textarea class="allforminputs" name="message" id="message" cols="40" rows="5"></textarea>
                     </div>
                     <div>
                         <h5>Would you like to visit the Mantis Shrimp?</h5>
@@ -92,6 +92,8 @@
                         <input type="radio" id="yes" name="yesorno">
                         <label for="no">No</label>
                         <input type="radio" id="no" name="yesorno">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="yesorno">
                     </div>
                     <div>
                         <button type="submit">Send</button>
@@ -103,10 +105,10 @@
         <aside>
             <section>
                 <h4>References:</h4>
-                <ul>
-                    <li>Image and article by National Geographic Kids
-                        (https://kids.nationalgeographic.com/animals/invertebrates/facts/peacockmantisshrimp)</li>
-                    <li>Facts from Fact Animal (https://factanimal.com/mantis-shrimp/)</li>
+                <ul class="refs">
+                    <li>Image and article from <a href="https://kids.nationalgeographic.com/animals/invertebrates/facts/peacockmantisshrimp" class="refslistlink">National Geographic Kids</a></li>
+                    <li>Facts from <a href="https://factanimal.com/mantis-shrimp/" class="refslistlink">Fact Animal</a></li>
+                    <li>Header image from <a href="https://en.wikipedia.org/wiki/Mantis_shrimp#/media/File:OdontodactylusScyllarus2.jpg" class="refslistlink">Wikipedia</a></li>
                 </ul>
             </section>
         </aside>
