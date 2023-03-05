@@ -152,6 +152,7 @@ body {
     background-color: rgb(18, 17, 37);
  }
 
+ /* Heading and header image */
 h1 {
     color: rgb(255, 255, 255);
     font-size: 60px;
@@ -159,7 +160,6 @@ h1 {
     font-weight: 900;
     text-align: center;
     background-image: url(/midterm/images/header-bg-wikipedia.jpg);
-    z-index: 999;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2% 20%;
@@ -184,6 +184,7 @@ article {
 }
 
 /* Wrap text around image, keeping image source below it. */
+
 figure {
     float: left;
     margin-bottom: 1.5%;
@@ -202,7 +203,7 @@ figcaption {
 
 p {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -215,13 +216,14 @@ h3 {
     text-transform: uppercase;
 }
 
+/* facts */
 article ul li {
     list-style: circle;
     list-style-position: inside;
     line-height: 1.5;
     padding-left: 1%;
     padding-right: 20%;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 aside {
