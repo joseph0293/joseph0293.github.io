@@ -133,6 +133,7 @@ table {
 This is where the CSS designing will start. This is just a break between RESET CSS and actual CSS 
 ----------------------------------------------------------------------------------------------------*/
 
+/* Smooth scrolling for in page links in the page */
 html {
     scroll-behavior: smooth;
 }
@@ -140,17 +141,16 @@ html {
 body {
     line-height: 1.2;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 8%;
+    padding-right: 8%;
     color:  rgb(105, 131, 169);
     background-color: rgb(31, 32, 52);
 }
+/* Adding colour to centre section */
 
-.container {
+ main {
     background-color: rgb(18, 17, 37);
-    margin: 0px auto;
-    position: relative;
-}
+ }
 
 h1 {
     color: rgb(255, 255, 255);
@@ -159,6 +159,7 @@ h1 {
     font-weight: 900;
     text-align: center;
     background-image: url(/midterm/images/header-bg-wikipedia.jpg);
+    z-index: 999;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2% 20%;
@@ -172,19 +173,26 @@ h2 {
     color: rgb(232, 81, 81);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 1%;
 }
 
 article {
     padding-right: 25px;
     padding-left: 25px;
+    margin-bottom: 30px;
 }
 
+/* Wrap text around image, keeping image source below it. */
 figure {
     float: left;
-    margin-right: 2%;
     margin-bottom: 1.5%;
+}
+
+img {
+    max-width: 600px;
+    width: 100%;
+    margin-right: 20px;
 }
 
 figcaption {
@@ -195,16 +203,8 @@ figcaption {
 p {
     line-height: 1.5;
     font-size: 16px;
-    padding-bottom: 1%;
 }
 
-p:nth-child(6) {
-    padding-bottom: 5%;
-}
-
-p:nth-child(3) {
-    text-indent: 5%;
-}
 
 h3 {
     color: rgb(232, 81, 81);
@@ -238,7 +238,7 @@ h4 {
 
 .inputform {
     border: dotted 1px rgb(149, 187, 243);
-    padding: 2%;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -291,6 +291,7 @@ div h5 {
 }
 
 input {
+    width: 99%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
@@ -302,6 +303,7 @@ input {
 }
 
 textarea {
+    width: 99%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
@@ -313,7 +315,6 @@ textarea {
 }
 
 nav ul a {
-    margin: 0px;
     display: block;
     padding: 20px;
     text-align: center;
@@ -324,23 +325,19 @@ nav ul a {
     font-size: 20px;
 }
 
-nav {
-    align-items: center;
-}
-
 nav ul {
     background-color: rgb(18, 17, 37);
     border: 1px solid;
 }
 
 nav ul li {
-    align-items: center;
+    max-width: 32%;
+    width: 100%;
     display: inline-block;
-    width: 32%;
     border-right: 1px rgb(105, 131, 169) solid;
 }
 
-nav ul li:nth-child(3){
+nav ul li:nth-child(3) {
     border-right: none;
 }
 
