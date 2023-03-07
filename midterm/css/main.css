@@ -138,6 +138,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body properties */
 body {
     line-height: 1.2;
     font-family: Arial, Helvetica, sans-serif;
@@ -176,7 +177,7 @@ h2 {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-
+/* padding for article */
 article {
     padding-right: 25px;
     padding-left: 25px;
@@ -190,17 +191,18 @@ figure {
     margin-bottom: 1.5%;
 }
 
+/* image responsiveness */
 img {
     max-width: 600px;
     width: 100%;
     margin-right: 20px;
 }
-
+/* image caption styling */
 figcaption {
     font-style: italic;
     font-size: small;
 }
-
+/* all paragraph styling */
 p {
     line-height: 1.5;
     font-size: 18px;
@@ -216,7 +218,7 @@ h3 {
     text-transform: uppercase;
 }
 
-/* facts */
+/* facts styling */
 article ul li {
     list-style: circle;
     list-style-position: inside;
@@ -225,7 +227,7 @@ article ul li {
     padding-right: 20%;
     font-size: 18px;
 }
-
+/* padding for form section */
 aside {
     padding-left: 25px;
     padding-right: 25px;;
@@ -238,6 +240,7 @@ h4 {
     margin-top: 3%;
 }
 
+/* border and padding for form */
 .inputform {
     border: dotted 1px rgb(149, 187, 243);
     padding: 20px;
@@ -247,7 +250,7 @@ h4 {
 form div label {
     font-size: 20px;
 }
-
+/* Radio button properties */
 #yes {
     width:  20px;
     height: 20px;
@@ -265,6 +268,7 @@ form div label {
     accent-color: rgb(232, 81, 81);
 }
 
+/* Submit button properties */
 form div button {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -291,7 +295,7 @@ div h5 {
     font-weight: 600;
     color: rgb(232, 81, 81);
 }
-
+/* input boxes styling */
 input {
     width: 99%;
     margin-top: 10px;
@@ -316,6 +320,7 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navigation styling */
 nav ul a {
     display: block;
     padding: 20px;
@@ -347,11 +352,13 @@ nav ul a:hover {
     color: rgb(255, 255, 255);
 }
 
+/* Change footer styling */
 footer {
     text-align: right;
     padding: 30px;
 }
 
+/* References styling */
 .refs {
     line-height: 25px;
     font-style: italic;
