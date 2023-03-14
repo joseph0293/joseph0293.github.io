@@ -126,6 +126,29 @@
      text-transform: uppercase;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
+/* Navigation Bar */
+
+.navlist>li {
+    border-bottom: 1px solid #474747;
+    text-align: center;
+}
+
+/* LoVe HAte */
+
+.navlist a,
+.navlist a:link,
+.navlist a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+}
+
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.current {
+    background-color: #5b92e5;
+    color: white;
+}
 
  /* Mobile App Section */
 
@@ -142,6 +165,20 @@
      background-color: #5b92e5;
      /* inherits the default black colour that was already set to font */
      color: inherit;
+ }
+
+ /* The 10 Actions Section */
+
+ .actions-list {
+    display: flex;
+    flex-flow: row wrap;
+ }
+
+ .actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
  }
 
 /* footer styles */
@@ -185,6 +222,22 @@
     .banner {
         background-image: url(../images/smog-desktop.jpg);
     }
+
+    /* Navigation */
+
+    .navlist {
+        display: flex;
+    }
+
+    .navlist li {
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid #474747;
+    }
+
+    .navlist li:last-child {
+        border-right: none;
+    }
     
     /* Mobile App Section */
 
@@ -197,14 +250,22 @@
     .app .button {
         float: right;
     }
-
-
-
-
 }
 
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 33%;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+     }
+}
 
-
-
-
-
+@media screen and (min-width: 1200px) {
+    .actions-list li {
+        max-width: 20%;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+     }
+}
