@@ -1,0 +1,271 @@
+ /* Global Styles */
+ html {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+     box-sizing: border-box;
+ }
+
+ body {
+     line-height: 1.5;
+ }
+
+ *,
+ *::after,    
+ *::before {
+     box-sizing: inherit;
+     line-height: inherit;
+ }
+
+ /* Just in case we need to use clear fix. No class yet. 
+ Created later because button came weird on the line*/
+
+ .clearfix::after {
+     content: '';
+     display: table;
+     clear: both;
+ }
+
+ img {
+     width: 100%;
+ }
+
+ /* LoVe HAte: Link, Visited, Hover/Focus, Active */
+
+ a,
+ a:link,
+ a:visited {
+     color: inherit;
+ }
+
+ a:hover,
+ a:focus {
+     color: #5b92e5;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-weight: bold;
+     /* 1em on top, 0 on the right, 0.5 on the bottom */
+     margin: 1em 0 0.5em;
+ }
+
+ h1 {
+     font-size: 5.063rem;
+ }
+
+ h2 {
+     font-size: 3.375rem;
+ }
+
+ h3 {
+     font-size: 2.25rem;
+ }
+
+ h4 {
+     font-size: 1.5rem;
+
+ }
+
+ h5 {
+     font-size: 1rem;
+ }
+
+ /* top-bottom left-right */
+
+ p {
+     margin: 1em 0;
+ }
+
+
+ .container {
+     /* To centre the content in container and keep to 1200 pixels */
+     max-width: 1200px;
+     margin: 0 auto;
+     /* space from edge of screen */
+     padding: 1em;
+ }
+
+ /* Header */
+ .mobile-logo {
+     max-width: 150px;
+     margin-bottom: 30px;
+     float: left;
+ }
+
+
+ .desktop-logo {
+     display: none;
+     float: left;
+     border-right: 1px solid #dfdfdf;
+     padding-right: 20px;
+ }
+
+ .actnownearlogo {
+    margin-left: 170px;
+    font-size: 50px;
+    padding-top: 25px;
+    color: #474747;
+
+ }
+
+ .banner {
+     height: 600px;
+     background: grey url(../images/smog-mobile.jpg);
+     background-size: cover;
+     clear: left;
+ }
+
+ .banner h1 {
+     margin: 0;
+     padding-top: 250px;
+     text-align: center;
+     color: white;
+     text-transform: uppercase;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+/* Navigation Bar */
+
+.navlist>li {
+    border-bottom: 1px solid #474747;
+    text-align: center;
+}
+
+/* LoVe HAte */
+
+.navlist a,
+.navlist a:link,
+.navlist a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+}
+
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.current {
+    background-color: #5b92e5;
+    color: white;
+}
+
+ /* Mobile App Section */
+
+ .button {
+     text-decoration: none;
+     display: inline-block;
+     padding: 20px;
+     border: 1px solid black;
+     border-radius: 10px;
+ }
+
+ .button:hover,
+ .button:focus {
+     background-color: #5b92e5;
+     /* inherits the default black colour that was already set to font */
+     color: inherit;
+ }
+
+ /* The 10 Actions Section */
+
+ .actions-list {
+    display: flex;
+    flex-flow: row wrap;
+ }
+
+ .actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+
+/* footer styles */
+
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #5b92e5;
+}
+
+.copyright {
+    text-align: right;
+}
+
+/* ----------------------------------------------------
+                DESKTOP STYLING 
+----------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: block;
+        max-width: 300px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .actnownearlogo {
+        margin-left: 170px;
+        font-size: 30px;
+        padding-top: 25px;
+        color: #474747;
+    
+     }
+    .banner {
+        background-image: url(../images/smog-desktop.jpg);
+    }
+
+    /* Navigation */
+
+    .navlist {
+        display: flex;
+    }
+
+    .navlist li {
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid #474747;
+    }
+
+    .navlist li:last-child {
+        border-right: none;
+    }
+    
+    /* Mobile App Section */
+
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .button {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 33%;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+    .actions-list li {
+        max-width: 20%;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+     }
+}
