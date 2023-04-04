@@ -6,30 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- Navigation -->
-        <img src="images/logo.png" alt="logo">
         <nav>
             <ul class="navlist">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><img class="logo" src="images/logo.png" alt="logo"></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <form action="#">
+                        <input class="searchinput" type="text" placeholder="Search...">
+                        <button type="submit">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </li>
             </ul>
         </nav>
-        <input class="searchinput" type="text" id="search" name="search" placeholder="Search..."><button
-            type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        <!-- USE FLEXBOX FOR NAVIGATION -->
 
         <!-- Banner and welcome message -->
-        <section class="mainbanner">
-            <img src="images/main-banner.jpg" alt="welcome-banner">
+        <!-- DO THIS IN CSS NOT HTML::: <img src="images/main-banner.jpg" alt="welcome-banner"> -->
+        <section class="welcomebanner">
             <div class="welcome">
+                <!-- MAX WIDTH 1200 for .welcome {} -->
                 <h1>Welcome to Three Star Media</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium alias consectetur ducimus
@@ -46,27 +60,29 @@
     <!-- Begin Main section of website & About Us-->
     <main>
         <div class="container">
-            <section>
-                <div class="aboutus">
-                    <img src="images/about-us.jpg" alt="about-us.jpg">
+            <!-- width 100% + bg colour -->
+            <div class="aboutus">
+                <img class="aboutimg" src="images/about-us.jpg" alt="about-us.jpg">
+                <div id="abouttext">
                     <h2>About</h2>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste enim aliquam iusto mollitia fuga
                         beatae molestias, debitis eius? Laboriosam vel eum perferendis quas non perspiciatis nemo ut,
                         saepe
                         distinctio illo?
-
+                    </p>
+                    <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim, temporibus sunt maxime
                         laborum
                         repellendus quod tenetur blanditiis rerum iste magni aliquid ipsa architecto! Quam optio sint
                         mollitia laborum assumenda.
                     </p>
                 </div>
-            </section>
+            </div>
         </div>
         <!-- Services section starts here -->
         <div class="container">
-            <section class="services">
+            <section id="services">
                 <h2>Our Services</h2>
                 <!-- Individual card 1 -->
                 <div class="card">
@@ -127,7 +143,8 @@
         </div>
         <!-- Services ends, Our Vision begins -->
         <section class="container">
-            <img src="images/vision.jpg" alt="vision">
+            <!-- max width: 1200px; -->
+            <!-- PUT THIS IN CSS AS BACKGROUND IMAGE: <img src="images/vision.jpg" alt="vision"> -->
             <div class="vision">
                 <h3>Our Vision</h3>
                 <p>
@@ -138,8 +155,9 @@
                 <button class="Learn">Learn More <i class="fa-solid fa-caret-right"></i></button>
             </div>
         </section>
+        <!-- Our Team section -->
         <div class="container">
-            <section class="team">
+            <section id="team">
                 <h2>Our Team</h2>
                 <div class="teamcard">
                     <img src="images/john.jpg" alt="John Doe">
@@ -167,7 +185,7 @@
         </div>
         <!-- Team ends, Contact section begins -->
         <div class="container">
-            <section class="contact">
+            <section id="contact">
                 <h2>Contact Us</h2>
                 <!-- Form section to send message-->
                 <section class="inputform" id="contactusform">
@@ -234,8 +252,8 @@
     </main>
     <!-- Footer begins -->
     <footer>
-        © Three Star Media, 2023. <br>
-        All images taken from <a href="https://unsplash.com">Unsplash.</a>
+        <p>&copy; Three Star Media, 2023.</p>
+        <p> All images taken from <a href="https://unsplash.com">Unsplash.</a></p>
     </footer>
 </body>
 
