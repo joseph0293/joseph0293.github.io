@@ -8,23 +8,28 @@ nav ul {
     display: flex;
 }
 */
+
+/* Basic Header properties */
 header {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Ensuring all containers have following properties */
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Styling the nav section */
 .navlist a,
 .navlist a:link {
     display: block;
     text-decoration: none;
     padding: 1em 0;
+    color: #c78c06;
 }
 
 .navlist a:visited {
@@ -39,27 +44,90 @@ header {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Open sans', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #c78c06;
-}
-.logo {
-    background-color: #c78c06;
-    width: auto;
 }
 
 .navlist {
     text-align: center;
-    background-color: black;
+    background-color: #222;
+    padding: 1em;
 }
-
+/* Logo left */
 .navlist li:nth-child(1) {
     background-color: #c78c06;
     text-align: left;
 }
 
+
+.searchinput{
+    width: 93%;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.searchbutton {
+    padding: 10px;
+    color:#c78c06;
+    background-color: #222;
+    border: 1px solid #c78c06;
+    margin-left: 0;
+}
+
+.searchbutton:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+
 .navlist a:hover,
 .navlist a:focus,
 .navlist a.current {
     background-color: #c78c06;
-    color: black;
+    color: #222;
+}
+
+.welcomebanner {
+    background-image: url(/final-project/images/main-banner.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2% 20%;
+    padding: 10%;
+}
+
+.welcome {
+    padding: 1em;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.welcome p {
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.connect {
+    background-color: #c78c06;
+    border: none;
+    padding: 20px;
+}
+
+.connect:hover {
+    background-color: #222;
+    color: #c78c06;
+}
+.fontopensans {
+    line-height: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
