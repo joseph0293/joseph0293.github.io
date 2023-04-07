@@ -53,13 +53,21 @@ header {
     background-color: #222;
     padding: 1em;
 }
+
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.current {
+    background-color: #c78c06;
+    color: #222;
+}
+
 /* Logo left */
 .navlist li:nth-child(1) {
     background-color: #c78c06;
     text-align: left;
 }
 
-
+/* Search bar and button end to end */
 .searchinput{
     width: 93%;
     border: none;
@@ -80,15 +88,6 @@ header {
     color: #222;
 }
 
-
-
-.navlist a:hover,
-.navlist a:focus,
-.navlist a.current {
-    background-color: #c78c06;
-    color: #222;
-}
-
 .welcomebanner {
     background-image: url(/final-project/images/main-banner.jpg);
     height: 450px;
@@ -104,17 +103,41 @@ header {
     background: rgba(0, 0, 0, 0.6);
 }
 
+/* Common heading properties */
+/* ----------------------------------- */
 h1 {
-    font-size: 3em;
-    line-height: 1.5em;
+    font-size: 4em;
+    line-height: 1.2em;
     font-family: 'Open sans', sans-serif;
     font-weight: 700;
 
 }
 
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 600;
+}
+/* ---------------------------------- */
+/* End of common heading properties */
+
 .welcome p {
     line-height: 1.2em;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .connect {
@@ -128,6 +151,121 @@ h1 {
     color: #c78c06;
 }
 .fontopensans {
-    line-height: 1em;
+    line-height: normal;
     font-family: 'Open Sans', sans-serif;
+}
+
+.aboutus {
+    background-color:#ffe6ac;
+    padding: 20px;
+
+}
+
+.aboutus img {
+    display: block;
+    width: 100%;
+}
+
+#abouttext {
+    line-height: normal;
+}
+
+#abouttext p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Our Services styling */
+
+#services {
+    line-height: normal;
+}
+
+#services h2 {
+    margin: 20px;
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: 20px;
+}
+
+.cardtext {
+    padding: 20px;
+}
+.card img {
+    width: 100%;
+}
+
+/* Styling all services buttons */
+
+.servicebutton {
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: #222;
+    border: none;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.servicebutton:hover,
+.servicebutton:focus {
+    color: #222;
+    background-color: white;
+}
+
+/* Styling the Vision section */
+.vision {
+    background-image: url(/final-project/images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2% 20%;
+    color: white;
+    padding: 20px;
+}
+
+.learn {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #222;
+    border: 1px solid #c78c06;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.learn:hover {
+    color: #222;
+    background-color: #c78c06;
+}
+
+/* Styling Our Team section */
+
+.teamcard {
+    background-color: #ffe6ac;
+    margin: 20px;
+}
+
+.teamtext {
+    padding: 20px;
+}
+
+.teamcard img {
+    width: 100%;
+}
+
+#team h2 {
+    margin: 20px;
+}
+
+.teamtext hr {
+    border: 1px solid #c78c06
+}
+
+/* Styling for Contact Us section */
+
+#contact {
+    margin: 20px;
 }
