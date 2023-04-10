@@ -3,21 +3,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 
-This is for media query desktop:
-nav ul {
-    display: flex;
-}
-*/
 
-/* Basic Header properties */
-header {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* Ensuring container has following properties */
+/* Ensuring header and container has following properties */
+header,
 .container {
     max-width: 1200px;
     width: 100%;
@@ -71,6 +59,7 @@ header {
     border: none;
     padding: 10px;
 }
+
 
 .searchbutton {
     padding: 10px;
@@ -375,7 +364,7 @@ footer a {
         margin: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(1fr, 2fr, 2fr);
+        grid-template-rows: 1fr 2fr 2fr;
         grid-template-areas:
             "os os os os os os"
             "dt dt dt mkt mkt mkt"
@@ -435,8 +424,8 @@ footer a {
 
     #contact {
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-rows: repeat (3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "contact contact"
             "message lokeshan"
