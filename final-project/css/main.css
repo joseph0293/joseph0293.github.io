@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 /* 
 This is for media query desktop:
 nav ul {
@@ -16,7 +17,7 @@ header {
     margin: 0 auto;
 }
 
-/* Ensuring all containers have following properties */
+/* Ensuring container has following properties */
 .container {
     max-width: 1200px;
     width: 100%;
@@ -46,9 +47,6 @@ header {
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
     color: #c78c06;
-}
-
-.navlist {
     text-align: center;
     background-color: #222;
     padding: 1em;
@@ -68,19 +66,17 @@ header {
 }
 
 /* Search bar and button end to end */
-.searchinput{
-    width: 93%;
+.searchinput {
+    width: 87%;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .searchbutton {
     padding: 10px;
-    color:#c78c06;
+    color: #c78c06;
     background-color: #222;
     border: 1px solid #c78c06;
-    margin-left: 0;
 }
 
 .searchbutton:hover {
@@ -90,11 +86,12 @@ header {
 
 .welcomebanner {
     background-image: url(/final-project/images/main-banner.jpg);
-    height: 450px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2% 20%;
-    padding: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .welcome {
@@ -103,21 +100,20 @@ header {
     background: rgba(0, 0, 0, 0.6);
 }
 
-/* Common heading properties */
+/* Common properties */
 /* ----------------------------------- */
+
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.2em;
     font-family: 'Open sans', sans-serif;
     font-weight: 700;
 
 }
 
-
 h2 {
     font-size: 3em;
     font-weight: 700;
-    margin-top: 10px;
 }
 
 h3 {
@@ -131,8 +127,19 @@ h4 {
     font-size: 1em;
     font-weight: 600;
 }
+
+.padding {
+    padding: 20px;
+}
+
+.fontopensans {
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* ---------------------------------- */
-/* End of common heading properties */
+/* End of common properties */
 
 .welcome p {
     line-height: 1.2em;
@@ -143,26 +150,19 @@ h4 {
 .connect {
     background-color: #c78c06;
     border: none;
-    padding: 20px;
 }
 
 .connect:hover {
     background-color: #222;
     color: #c78c06;
 }
-.fontopensans {
-    line-height: normal;
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 .aboutus {
-    background-color:#ffe6ac;
-    padding: 20px;
-
+    background-color: #ffe6ac;
 }
 
 .aboutus img {
-    display: block;
     width: 100%;
 }
 
@@ -190,9 +190,6 @@ h4 {
     margin: 20px;
 }
 
-.cardtext {
-    padding: 20px;
-}
 .card img {
     width: 100%;
 }
@@ -220,9 +217,8 @@ h4 {
     background-image: url(/final-project/images/vision.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 2% 20%;
+    background-position: -50% 10%;
     color: white;
-    padding: 20px;
 }
 
 .learn {
@@ -243,21 +239,14 @@ h4 {
 
 /* Styling Our Team section */
 
-.teamcard {
+.fullteam {
     background-color: #ffe6ac;
     margin: 20px;
+    margin-top: 0;
 }
 
-.teamtext {
-    padding: 20px;
-}
-
-.teamcard img {
+.fullteam img {
     width: 100%;
-}
-
-#team h2 {
-    margin: 20px;
 }
 
 .teamtext hr {
@@ -266,6 +255,210 @@ h4 {
 
 /* Styling for Contact Us section */
 
-#contact {
-    margin: 20px;
+.allforminputs {
+    padding: 5px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    width: 98%;
+}
+
+.contactbutton {
+    padding: 10px;
+    background-color: #222;
+    color: #c78c06;
+    text-transform: uppercase;
+    border: 1px solid #c78c06;
+}
+
+.contactbutton:hover {
+    background-color: #c78c06;
+    color: inherit;
+    border: 1px solid #222;
+}
+
+/* Styling table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+table th,
+table td {
+    padding: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: #c78c06;
+    text-decoration: none;
+}
+
+footer a {
+    background-color: #222;
+    color: #c78c06;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.lokesh {
+    padding-top: 20px;
+}
+
+/* ----------------------------------------------------
+                     DESKTOP STYLING 
+----------------------------------------------------*/
+
+@media screen and (min-width: 900px) {
+
+    /* Styling navigation */
+    .navlist {
+        display: flex;
+        align-items: center;
+    }
+
+    .navlist li:nth-child(1) {
+        background-color: #222;
+    }
+
+    nav li {
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .searchinput {
+        width: 70%;
+        border: none;
+        padding: 10px;
+    }
+
+
+    /* Styling Header */
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .welcomebanner {
+        height: 300px;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-position: -50% 50%;
+    }
+
+    .connect {
+        font-size: large;
+    }
+
+    .aboutus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    #abouttext {
+        margin-top: 0px;
+    }
+
+    /* Styling services section */
+    #services {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1fr, 2fr, 2fr);
+        grid-template-areas:
+            "os os os os os os"
+            "dt dt dt mkt mkt mkt"
+            "vp vp wd wd pr pr";
+        gap: 1.2em;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    #services h2 {
+        margin: 0px;
+        grid-area: os;
+    }
+
+    .digitaltrans {
+        grid-area: dt;
+    }
+
+    .marketing {
+        grid-area: mkt;
+    }
+
+    .videoprod {
+        grid-area: vp;
+    }
+    .webdev {
+        grid-area: wd;
+    }
+
+    .print {
+        grid-area: pr;
+    }
+
+    /* vision */
+
+    .vision {
+        height: 200px;
+        background-position: -50% 30%;
+    }
+
+    /* Styling team in grid */
+
+    .fullteam {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .moveright {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Styling Contact section in grid */
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas:
+            "contact contact"
+            "message lokeshan"
+            "hoursop hoursop";
+            gap: 1em;
+    }
+
+    #contact h2 {
+        grid-area: contact;
+    }
+
+    #contactusform {
+        grid-area: message;
+    }
+
+    .lokesh {
+        grid-area: lokeshan;
+    }
+    
+    .hours {
+        grid-area: hoursop;
+    }
+
+
 }
