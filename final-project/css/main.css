@@ -13,6 +13,13 @@ header,
 }
 
 /* Styling the nav section */
+
+header nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #222;
+}
+
 .navlist a,
 .navlist a:link {
     display: block;
@@ -50,7 +57,7 @@ header,
 /* Logo left */
 .navlist li:nth-child(1) {
     background-color: #c78c06;
-    text-align: left;
+    text-align: center;
 }
 
 /* Search bar and button end to end */
@@ -186,8 +193,9 @@ h4 {
 /* Styling all services buttons */
 
 .servicebutton {
-    padding: 20px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 30px;
+    margin-top: 20px;
     color: white;
     background-color: #222;
     border: none;
@@ -361,10 +369,12 @@ footer a {
 
     /* Styling services section */
     #services {
+        padding-top: 20px;
+        padding-bottom: 20px;
         margin: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-rows: 0.5fr 7fr 6fr;
         grid-template-areas:
             "os os os os os os"
             "dt dt dt mkt mkt mkt"
@@ -425,7 +435,7 @@ footer a {
     #contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 5fr 1.7fr;
         grid-template-areas:
             "contact contact"
             "message lokeshan"
