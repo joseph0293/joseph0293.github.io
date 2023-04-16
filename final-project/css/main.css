@@ -21,13 +21,7 @@ header nav {
 }
 
 .navlist a,
-.navlist a:link {
-    display: block;
-    text-decoration: none;
-    padding: 1em 0;
-    color: #c78c06;
-}
-
+.navlist a:link,
 .navlist a:visited {
     display: block;
     text-decoration: none;
