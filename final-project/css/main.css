@@ -56,7 +56,7 @@ header nav {
 
 /* Search bar and button end to end */
 .searchinput {
-    width: 87%;
+    width: 84%;
     border: none;
     padding: 10px;
 }
@@ -309,6 +309,21 @@ footer a {
 /* ----------------------------------------------------
                      DESKTOP STYLING 
 ----------------------------------------------------*/
+
+/* Only to adjust search bar */
+
+@media screen and (min-width: 680px) {
+
+
+.searchinput {
+    width: 90%;
+    border: none;
+    padding: 10px;
+}
+
+}
+
+/* Remaining desktop styling */
 
 @media screen and (min-width: 900px) {
 
