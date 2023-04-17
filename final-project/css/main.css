@@ -51,7 +51,7 @@ header nav {
 /* Logo left */
 .navlist li:nth-child(1) {
     background-color: #c78c06;
-    text-align: center;
+    text-align: left;
 }
 
 /* Search bar and button end to end */
@@ -79,7 +79,7 @@ header nav {
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 2% 20%;
+    background-position: 50% 50%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -337,7 +337,7 @@ footer a {
 
 /* Remaining desktop styling */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 760px) {
 
     /* Styling navigation */
     .navlist {
