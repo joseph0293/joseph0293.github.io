@@ -76,7 +76,7 @@ header nav {
 
 .welcomebanner {
     background-image: url(/final-project/images/main-banner.jpg);
-    height: 500px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2% 20%;
@@ -310,17 +310,29 @@ footer a {
                      DESKTOP STYLING 
 ----------------------------------------------------*/
 
-/* Only to adjust search bar */
+/* Adjust banner */
+@media screen and (min-width: 500px) {
+
+    .welcomebanner {
+        height: 500px;
+
+    }
+}
+
+/* adjust search bar*/
 
 @media screen and (min-width: 680px) {
 
+    .welcomebanner {
+        height: 450px;
 
-.searchinput {
-    width: 90%;
-    border: none;
-    padding: 10px;
-}
+    }
 
+    .searchinput {
+      width: 90%;
+      border: none;
+      padding: 10px;
+    }
 }
 
 /* Remaining desktop styling */
