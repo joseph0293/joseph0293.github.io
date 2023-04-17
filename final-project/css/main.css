@@ -3,20 +3,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/* Ensuring header and container has following properties */
-header,
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* Styling the nav section */
 
 header nav {
-    padding-left: 5%;
-    padding-right: 5%;
     background-color: #222;
 }
 
@@ -30,6 +19,8 @@ header nav {
 }
 
 .navlist {
+    max-width: 1200px;
+    margin: 0 auto;
     display: block;
     text-decoration: none;
     font-size: 20px;
@@ -85,6 +76,8 @@ header nav {
 }
 
 .welcome {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1em;
     color: white;
     background: rgba(0, 0, 0, 0.6);
@@ -152,6 +145,10 @@ h4 {
     background-color: #ffe6ac;
 }
 
+.aboutcentre {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .aboutus img {
     width: 100%;
 }
@@ -210,6 +207,10 @@ h4 {
     background-size: cover;
     background-position: -50% 10%;
     color: white;
+}
+
+.vision h3 {
+    font-size: 2em;
 }
 
 .learn {
@@ -364,7 +365,7 @@ footer a {
     /* Styling Header */
 
     h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .welcomebanner {
@@ -378,7 +379,7 @@ footer a {
         font-size: large;
     }
 
-    .aboutus {
+    .aboutcentre {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
@@ -390,9 +391,10 @@ footer a {
 
     /* Styling services section */
     #services {
+        max-width: 1200px;
+        margin: 0 auto;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 0.5fr 7fr 6fr;
@@ -433,14 +435,33 @@ footer a {
 
     /* vision */
 
+    .learnbutton {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .vision {
         height: 200px;
         background-position: -50% 30%;
     }
 
+    .vision h3,
+    .vision p{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     /* Styling team in grid */
 
+    #team h2 {
+        padding-left: 0;
+    }
+
+    #team {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .fullteam {
+        margin: 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -454,6 +475,8 @@ footer a {
     /* Styling Contact section in grid */
 
     #contact {
+        max-width: 1200px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.5fr 5fr 1.7fr;
@@ -480,5 +503,9 @@ footer a {
         grid-area: hoursop;
     }
 
+    footer p {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
 }
